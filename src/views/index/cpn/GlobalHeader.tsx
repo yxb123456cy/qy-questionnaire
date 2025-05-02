@@ -29,7 +29,7 @@ export const GlobalHeader = () => {
         <>
             <div className={'logo'}>
                 <Link to={'/'}>
-                    <img className={'logoImg'} src={'public/images/logo.png'} alt={'logo'}/>
+                    <img className={'logoImg'} src={'/src/assets/images/logo.png'} alt={'logo'}/>
                     <span style={{color: "rgb(48, 49, 51)"}}>问卷喵</span>
                     <span style={{
                         fontSize: "13px",

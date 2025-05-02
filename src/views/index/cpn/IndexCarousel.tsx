@@ -13,15 +13,15 @@ export const IndexCarousel = () => {
 
     const carouselList: Array<carouselData> = [
         {
-            src: "public/images/carousel1.jpg",
+            src: "/src/assets/images/carousel1.jpg",
             alt: "走马灯 1"
         },
         {
-            src: "public/images/carousel2.jpg",
+            src: "/src/assets/images/carousel2.jpg",
             alt: "走马灯 2"
         },
         {
-            src: "public/images/carousel3.jpg",
+            src: "/src/assets/images/carousel3.jpg",
             alt: "走马灯 3"
         }
     ]
