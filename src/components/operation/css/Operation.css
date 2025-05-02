@@ -1,0 +1,8 @@
+.Operation{
+    position: relative;
+    background-color: #fafafa;
+    text-align: left;
+    height: 40px;
+    margin-left: 1.5vw;
+    overflow: hidden;
+}

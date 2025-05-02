@@ -1,0 +1,26 @@
+.Design{
+    font-size: large;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    height: calc(100vh - 175px);
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.Design-title{
+
+}
+
+.Design-top{
+    color: #606266;
+    margin-left: 20px;
+    padding: 0 10px 10px;
+    border-bottom: 3px solid #409eff;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: left;
+}
+.QuestionnaireData-list-content{
+
+}

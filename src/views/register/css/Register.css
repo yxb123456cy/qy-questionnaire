@@ -1,0 +1,44 @@
+.Register-container {
+    display: flex;
+    align-items: center;
+    min-height: 85vh;
+}
+
+.Register-banner {
+    width: 50%;
+}
+
+.Register-view {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.Register-card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.Register-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Register-form {
+    margin-top: 2vh;
+}
+
+.Register-to-login{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.Register-to-login:hover{
+    cursor: pointer;
+    color: royalblue;
+    text-decoration: underline;
+}

@@ -1,0 +1,7 @@
+.QuestionnaireList{
+    background-color: #fff;
+    height: calc(100vh - 100px);
+    overflow-x: scroll;
+    overflow-y: scroll;
+    left: 0;
+}

@@ -1,0 +1,35 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    min-height: 85vh;
+}
+
+.login-banner {
+    width: 50%;
+}
+
+.login-view {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-card {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.login-image {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    margin-top: 2vh;
+
+}

@@ -1,0 +1,21 @@
+.logo {
+    height: 60px;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 20px;
+    position: absolute;
+    left: 100px;
+    color: #303133;
+    cursor: pointer;
+}
+
+.header-right {
+    float: right;
+    margin-right: 1vw;
+    line-height: 60px;
+}
+
+.logoImg {
+    width: 30px;
+    vertical-align: middle;
+}
