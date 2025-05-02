@@ -25,6 +25,7 @@ export const useUserStore = create<UserState>()(
             tokenValue: tokenValue,
         })),
         saveTokenValueToCache: () => {
+
             const state = useUserStore.getState();
             localCache.setCache("token", state.token);
         }
