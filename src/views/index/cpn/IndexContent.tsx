@@ -13,15 +13,15 @@ export const IndexContent = () => {
 
     const codeDivDataList: Array<codeDivData> = [
         {
-            src: "/src/assets/images/demo1.png",
+            src: "/images/demo1.png",
             alt: "问卷 首页图片1"
         },
         {
-            src: "/src/assets/images/demo2.png",
+            src: "/images/demo2.png",
             alt: "问卷 首页图片2"
         },
         {
-            src: "/src/assets/images/demo3.png",
+            src: "/images/demo3.png",
             alt: "问卷 首页图片3"
         }
     ]
