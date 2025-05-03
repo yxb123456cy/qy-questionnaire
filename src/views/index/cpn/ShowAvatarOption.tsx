@@ -11,8 +11,8 @@ import {useUserStore} from "../../../stores/UserStore.ts";
  * @constructor
  */
 export const ShowAvatarOption: React.FC = () => {
-    const location = useLocation();
-    const navigate = useNavigate();
+    const location = useLocation(); //可以获取当前React路由信息;
+    const navigate = useNavigate(); //路由编程式跳转;
     const setLoginState = useUserStore(state => state.setLoginState);
     const logOut = () => {
         //localCache.setCache("login-values", value);
