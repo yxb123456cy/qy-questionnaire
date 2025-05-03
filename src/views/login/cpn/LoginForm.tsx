@@ -2,6 +2,7 @@ import {FormProps, message} from 'antd';
 import {Button, Checkbox, Form, Input} from 'antd';
 import {Link, useNavigate} from "react-router";
 import {localCache} from "../../../utils/Cache.ts";
+import {useUserStore} from "../../../stores/UserStore.ts";
 
 type FieldType = {
     username?: string;
@@ -15,6 +16,7 @@ const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = (errorInfo) => {
     console.log('Failed:', errorInfo);
 };
 export const LoginForm = () => {
+    const setLoginState = useUserStore(state => state.setLoginState);
     const navigate = useNavigate();
     const [messageApi, contextHolder] = message.useMessage();
     const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
@@ -29,10 +31,12 @@ export const LoginForm = () => {
                 localCache.setCache("login-values", value);
             }
 
-                messageApi.success('登录成功',1).then(r => {
-                    console.log(r);
-                    navigate('/home');
-                });
+            messageApi.success('登录成功', 1).then(r => {
+                //Zustand保存登录信息 并且切换出头像操作组件;
+                setLoginState(true);
+                console.log(r);
+                navigate('/home');
+            });
         } else {
             console.log('账号或密码错误,登录失败');
             messageApi.error("账号或密码错误,登录失败").then(r => {

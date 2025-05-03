@@ -8,6 +8,7 @@ import {Display} from "../views/display/Display.tsx";
 import {Preview} from "../views/preview/Preview.tsx";
 import {Home} from "../views/home/Home.tsx";
 import {ThankYou} from "../views/thankyou/ThankYou.tsx";
+import {Profile} from "../views/profile/Profile.tsx";
 
 const router = createBrowserRouter([
     {
@@ -16,7 +17,8 @@ const router = createBrowserRouter([
             {element: <Index/>, index: true},
             {path: 'login', element: <Login/>},
             {path: 'register', element: <Register/>},
-            {path: 'home', element: <Home/>}
+            {path: 'home', element: <Home/>},
+            {path: "profile", element: <Profile/>},
         ]
     },
     {path: "/display", element: <Display/>},

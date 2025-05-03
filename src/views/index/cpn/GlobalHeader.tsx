@@ -5,8 +5,12 @@
 import './css/GlobalHeader.css'
 import {Button} from "antd";
 import {Link} from "react-router";
+import React from "react";
+import {ShowAvatarOption} from "./ShowAvatarOption.tsx";
+import {useUserStore} from "../../../stores/UserStore.ts";
 
-const ShowLoginAndRegister = () => {
+
+const ShowLoginAndRegister: React.FC = () => {
     return (
         <>
             <div>
@@ -24,6 +28,7 @@ const ShowLoginAndRegister = () => {
     )
 }
 export const GlobalHeader = () => {
+    const loginState = useUserStore(state => state.isLogin);
 
     return (
         <>
@@ -37,12 +42,15 @@ export const GlobalHeader = () => {
                         color: "rgb(96, 98, 102)"
                     }}>——免费的在线问卷调查系统</span>
                 </Link>
-
             </div>
 
             <div className={'header-right'}>
                 {/*通过Zustand中的登录状态来判断需要渲染的组件*/}
-                <ShowLoginAndRegister/>
+                {/*<ShowAvatarOption/>*/}
+                {/*<ShowLoginAndRegister/>*/}
+                {loginState ? <ShowAvatarOption/>
+                    : <ShowLoginAndRegister/>
+                }
             </div>
         </>
     )
